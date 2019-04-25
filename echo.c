@@ -1,5 +1,3 @@
-
-
 // Write CPP code here
 #include <netdb.h>
 #include <stdio.h>
@@ -11,22 +9,16 @@
 #define SA struct sockaddr
 void func(int sockfd)
 {
-    char ch, file_name[25];
     FILE *fp;
-    int n=0;
-    printf("Enter name of a file you wish to see\n");
-    while ((file_name[n++] = getchar()) != '\n');
-    file_name[n]="\0";
-    printf("%s",file_name);
-    fp = fopen(file_name, "r"); // read mode
-
+    fp = fopen("", "r"); // read mode
+    char ch;
     if (fp == NULL)
     {
         perror("Error while opening the file.\n");
         exit(EXIT_FAILURE);
     }
 
-    printf("The contents of %s file are:\n", file_name);
+    printf("The contents of file are:\n");
 
     while((ch = fgetc(fp)) != EOF)
         printf("%c", ch);
@@ -35,7 +27,7 @@ void func(int sockfd)
 
 
     char buff[MAX];
-    n=0;
+    int n=0;
     for (;;) {
         bzero(buff, sizeof(buff));
         printf("Enter the string : ");

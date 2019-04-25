@@ -1,0 +1,9 @@
+.\" Mnpage for daytime.
+.\" 
+.TH man 8 "25 Apr 2019" "1.0" "daytime man page"
+.SH NAME
+daytime \- create a client that can send anything to the server
+.SH DESCRIPTION
+run the program and it will ask for input stirng, and press enter to send the string
+.SH AUTHOR
+Honghao Li

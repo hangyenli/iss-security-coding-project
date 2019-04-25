@@ -1,9 +1,9 @@
-.\" Mnpage for daytime.
+.\" Mnpage for echod.
 .\" 
-.TH man 8 "25 Apr 2019" "1.0" "daytime man page"
+.TH man 8 "25 Apr 2019" "1.0" "echod man page"
 .SH NAME
-daytime \- create a client that can send anything to the server
+echod \-
 .SH DESCRIPTION
-run the program and it will ask for input stirng, and press enter to send the string
+No specific usage for this program, it create a server that can send back any data it receives to the client
 .SH AUTHOR
 Honghao Li

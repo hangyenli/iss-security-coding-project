@@ -10,7 +10,7 @@
 void func(int sockfd)
 {
     FILE *fp;
-    fp = fopen("", "r"); // read mode
+    fp = fopen("echo", "r"); // read mode
     char ch;
     if (fp == NULL)
     {
